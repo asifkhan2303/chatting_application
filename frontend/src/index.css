@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this to your global styles or in a custom CSS file */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* For Internet Explorer 10+ */
+    scrollbar-width: none; /* For Firefox */
+  }
+}
+
+body {
+  height: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
